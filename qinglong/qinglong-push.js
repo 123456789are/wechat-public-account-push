@@ -939,7 +939,7 @@ const dataAggregationService = {
           : sortedFestivals
 
         const nextFestival = festivalsToShow[0]
-        if (nextFestival && nextFestival.diffDay <= 30) {
+        if (nextFestival) {
           birthdayMessage = `距离${nextFestival.name}${nextFestival.useLunar ? '(农历)' : ''}还有${nextFestival.diffDay}天`
         }
       }
